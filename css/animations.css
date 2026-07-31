@@ -1,0 +1,345 @@
+/* ==========================================
+   FONDO RESPIRANDO
+========================================== */
+
+#background{
+    animation: gradientMove 18s ease infinite;
+}
+
+@keyframes gradientMove{
+
+    0%{
+        background-position:0% 50%;
+    }
+
+    50%{
+        background-position:100% 50%;
+    }
+
+    100%{
+        background-position:0% 50%;
+    }
+
+}
+
+/* ==========================================
+   APARICIÓN DEL CONTENIDO
+========================================== */
+
+.content{
+
+    animation:fadeUp 1.8s ease forwards;
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateY(0);
+
+    }
+
+}
+
+/* ==========================================
+   TÍTULO
+========================================== */
+
+h1{
+
+    animation:titleGlow 4s ease-in-out infinite;
+
+}
+
+@keyframes titleGlow{
+
+    0%,100%{
+
+        text-shadow:
+        0 0 12px rgba(255,126,182,.35),
+        0 0 30px rgba(255,126,182,.20);
+
+    }
+
+    50%{
+
+        text-shadow:
+        0 0 25px rgba(255,126,182,.75),
+        0 0 60px rgba(255,126,182,.35);
+
+    }
+
+}
+
+/* ==========================================
+   SUBTÍTULO
+========================================== */
+
+.subtitle{
+
+    animation:fadeSubtitle 2s ease;
+
+}
+
+@keyframes fadeSubtitle{
+
+    from{
+
+        opacity:0;
+        letter-spacing:8px;
+
+    }
+
+    to{
+
+        opacity:1;
+        letter-spacing:2px;
+
+    }
+
+}
+
+/* ==========================================
+   TEXTO
+========================================== */
+
+p{
+
+    animation:textFade 2.5s ease;
+
+}
+
+@keyframes textFade{
+
+    from{
+
+        opacity:0;
+
+    }
+
+    to{
+
+        opacity:1;
+
+    }
+
+}
+
+/* ==========================================
+   BOTÓN
+========================================== */
+
+button{
+
+    animation:buttonFloat 3s ease-in-out infinite;
+
+}
+
+@keyframes buttonFloat{
+
+    0%,100%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-6px);
+
+    }
+
+}
+
+/* ==========================================
+   LATIDO DEL CORAZÓN (para después)
+========================================== */
+
+.heartbeat{
+
+    animation:heartbeat 1.5s infinite;
+
+}
+
+@keyframes heartbeat{
+
+    0%{
+
+        transform:scale(1);
+
+    }
+
+    20%{
+
+        transform:scale(1.08);
+
+    }
+
+    40%{
+
+        transform:scale(.98);
+
+    }
+
+    60%{
+
+        transform:scale(1.12);
+
+    }
+
+    100%{
+
+        transform:scale(1);
+
+    }
+
+}
+
+/* ==========================================
+   DESVANECER
+========================================== */
+
+.fade-out{
+
+    animation:fadeOut .8s forwards;
+
+}
+
+@keyframes fadeOut{
+
+    to{
+
+        opacity:0;
+
+        transform:scale(.98);
+
+    }
+
+}
+
+.fade-in{
+
+    animation:fadeIn .8s forwards;
+
+}
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+
+        transform:scale(1.02);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:scale(1);
+
+    }
+
+}
+
+/* ==========================================
+   ESTRELLA FUGAZ
+========================================== */
+
+.shooting-star{
+
+    position:absolute;
+
+    width:2px;
+
+    height:2px;
+
+    border-radius:50%;
+
+    background:white;
+
+    box-shadow:
+        0 0 10px white,
+        0 0 25px white;
+
+    animation:shoot 3s linear forwards;
+
+}
+
+.shooting-star::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:160px;
+
+    height:2px;
+
+    background:linear-gradient(
+        to left,
+        rgba(255,255,255,.9),
+        transparent
+    );
+
+    transform:translateX(-160px);
+
+}
+
+@keyframes shoot{
+
+    from{
+
+        transform:
+        translate(0,0);
+
+        opacity:1;
+
+    }
+
+    to{
+
+        transform:
+        translate(-800px,450px);
+
+        opacity:0;
+
+    }
+
+}
+
+/* ==========================================
+   EFECTO DE BRILLO SUAVE
+========================================== */
+
+.glow{
+
+    animation:glow 2s infinite alternate;
+
+}
+
+@keyframes glow{
+
+    from{
+
+        filter:drop-shadow(0 0 5px rgba(255,255,255,.2));
+
+    }
+
+    to{
+
+        filter:drop-shadow(0 0 20px rgba(255,255,255,.7));
+
+    }
+
+}

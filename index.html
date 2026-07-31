@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Para Ti ❤️</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+
+</head>
+
+<body>
+
+    <!-- Fondo -->
+    <div id="background"></div>
+
+    <!-- Estrellas -->
+    <div id="stars"></div>
+
+    <!-- Corazones -->
+    <div id="hearts"></div>
+
+    <main id="app">
+
+        <!-- ========================================= -->
+        <!-- BIENVENIDA -->
+        <!-- ========================================= -->
+
+        <section id="welcome" class="screen active">
+
+            <div class="content">
+
+                <span class="subtitle">
+                    Para la niña que logró hacer que la distancia
+                    se sintiera mucho más pequeña que el amor.
+                </span>
+
+                <h1>
+                    Feliz Día de la Novia ❤️
+                </h1>
+
+                <p>
+
+                    Hice esta pequeña página para ti.
+
+                    No es el regalo más caro del mundo...
+
+                    Pero sí uno en el que puse muchas horas,
+                    muchas ideas y muchísimo amor.
+
+                </p>
+
+                <button id="startBtn">
+
+                    Comenzar nuestro viaje 🫣
+
+                </button>
+
+            </div>
+
+        </section>
+
+        <!-- ========================================= -->
+        <!-- LA DISTANCIA -->
+        <!-- ========================================= -->
+
+        <!-- ========================================= -->
+<!-- CAPÍTULO 2 - LA DISTANCIA -->
+<!-- ========================================= -->
+
+<section id="distance" class="screen">
+
+    <div class="content">
+
+        <h2>Nuestra historia...</h2>
+
+        <div id="dialogContainer">
+
+            <p id="dialogText"></p>
+
+        </div>
+
+        <button id="distanceNext" class="hidden">
+            Continuar ❤️
+        </button>
+
+    </div>
+
+</section>
+
+    </main>
+
+
+    <!-- ========================================= -->
+<!-- LAS ESTRELLAS -->
+<!-- ========================================= -->
+
+<section id="starsScene" class="screen">
+
+    <div class="content">
+
+        <h2>Las estrellas tienen algo que decirte ✨</h2>
+
+        <p class="scene-description">
+            Cada estrella guarda un pensamiento que tengo para ti.
+            Descúbrelos uno por uno.
+        </p>
+
+        <div id="starsGame">
+
+            <!-- Las estrellas se crean con JavaScript -->
+
+        </div>
+
+        <div id="messageCard" class="hidden">
+
+            <div class="card">
+
+                <h3>💖</h3>
+
+                <p id="starMessage">
+                    Aquí aparecerá el mensaje.
+                </p>
+
+                <button id="closeMessage">
+                    Seguir descubriendo ⭐
+                </button>
+
+            </div>
+
+        </div>
+
+        <div class="progress">
+
+            <span id="starsFound">0</span> / 10 pensamientos descubiertos
+
+        </div>
+
+<button id="starsContinue" class="hidden">
+    ❤️ Ahora quiero contarte 90 razones por las que te amo
+</button>
+
+    </div>
+
+</section>
+<section id="reasonsScene" class="screen">
+
+    <div class="content">
+
+        <h2>90 razones por las que te amo ❤️</h2>
+
+        <p class="scene-description">
+            Cada una de estas razones nació de todo lo que me haces sentir.
+            Descúbrelas una por una.
+        </p>
+
+        <div class="reason-card">
+
+            <span id="reasonCounter">
+                1 / 90
+            </span>
+
+            <p id="reasonText">
+
+            </p>
+
+        </div>
+
+        <button id="nextReason">
+            Siguiente razón ❤️
+        </button>
+
+    </div>
+
+</section>
+
+<!-- ========================================= -->
+<!-- MI CORAZÓN -->
+<!-- ========================================= -->
+
+<section id="heartScene" class="screen">
+
+    <div class="content">
+
+        <h2 id="heartTitle">Mi corazón ❤️</h2>
+
+        <p id="heartIntro">
+            Hay algo aquí dentro que quiero que leas...
+        </p>
+
+        <div id="heartContainer">
+
+            <div id="heart" class="heartbeat">
+                ❤️
+            </div>
+
+        </div>
+
+        <p class="heartText" id="heartHint">
+            Haz clic sobre mi corazón.
+        </p>
+
+        <div id="letterContainer" class="hidden">
+
+            <div class="letter">
+
+                <h3>Para ti ❤️</h3>
+
+                <p id="letterText"></p>
+
+            </div>
+
+        </div>
+
+        <div id="finalMessage" class="hidden">
+
+            <p class="final-line">
+                No importa cuántos kilómetros nos separen...
+            </p>
+
+            <p class="final-line delay-1">
+                Mi corazón siempre va a elegir quedarse contigo.
+            </p>
+
+            <p class="final-signature">
+                Te amo. ❤️
+            </p>
+
+            <p class="final-from">
+                Con todo mi amor
+            </p>
+
+        </div>
+
+        <button id="heartNext" class="hidden">
+            Cerrar con un abrazo 💖
+        </button>
+
+    </div>
+
+</section>
+
+    <!-- Música -->
+
+    <audio id="music" loop>
+
+        <source
+            src="assets/music/song.mp3"
+            type="audio/mpeg">
+
+    </audio>
+
+    <!-- JS -->
+
+<script src="js/stars.js"></script>
+<script src="js/messages.js"></script>
+<script src="js/starsGame.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+
+
+</html>
