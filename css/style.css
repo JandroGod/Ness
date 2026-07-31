@@ -481,20 +481,14 @@ ESTRELLAS INTERACTIVAS
 TARJETA
 ==================================*/
 
-#messageCard{
-
-    position:fixed;
-
-    inset:0;
-
-    background:rgba(0,0,0,.75);
-
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
-
+#messageCard {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
 }
 
 .card{
