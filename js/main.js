@@ -151,6 +151,16 @@ function showScene(id) {
         scene.classList.add("active");
     }
 
+    // Solo la última página (carta / corazón) permite scroll
+    if (id === "heartScene") {
+        document.body.classList.add("scroll-enabled");
+        document.documentElement.classList.add("scroll-enabled");
+    } else {
+        document.body.classList.remove("scroll-enabled");
+        document.documentElement.classList.remove("scroll-enabled");
+        window.scrollTo(0, 0);
+    }
+
 }
 
 // ===============================================
@@ -315,7 +325,10 @@ Hoy solo quiero que sepas algo, con total claridad:
 Te amo.
 Con tiempo, con ganas y con la certeza de que este sentimiento vale cada espera.
 
-Para siempre tuyo. ❤️`;
+Para siempre tuyo. ❤️
+
+Jandro <3`;
+
 
 let letterOpened = false;
 

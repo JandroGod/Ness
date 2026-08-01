@@ -824,3 +824,40 @@ CIERRE FINAL — CORAZÓN Y CARTA
 #heartNext {
     margin-top: 32px;
 }
+
+/*==================================
+SCROLL EN LA ÚLTIMA PÁGINA (heartScene)
+==================================*/
+
+html.scroll-enabled,
+body.scroll-enabled {
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
+    height: auto !important;
+}
+
+#heartScene.screen.active {
+    position: relative;
+    inset: auto;
+    min-height: 100vh;
+    height: auto;
+    overflow: visible;
+    opacity: 1;
+    visibility: visible;
+    padding: 40px 20px 80px;
+    align-items: flex-start;
+}
+
+#heartScene .content {
+    max-width: 700px;
+    margin: 0 auto;
+    padding-bottom: 60px;
+}
+
+#heartScene .letter {
+    max-height: none;
+}
+
+#letterText {
+    max-height: none;
+}
