@@ -861,3 +861,61 @@ body.scroll-enabled {
 #letterText {
     max-height: none;
 }
+
+/*==================================
+SCROLL EN LA ÚLTIMA PÁGINA (heartScene)
+==================================*/
+
+html.scroll-enabled,
+body.scroll-enabled {
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
+    height: auto !important;
+    min-height: 100%;
+}
+
+#heartScene.screen.active {
+    position: relative !important;
+    inset: auto !important;
+    top: auto !important;
+    left: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+    min-height: 100vh;
+    height: auto !important;
+    max-height: none !important;
+    overflow: visible !important;
+    opacity: 1;
+    visibility: visible;
+    padding: 50px 20px 200px; /* mucho espacio abajo */
+    align-items: flex-start;
+    display: block !important; /* crece con el contenido */
+}
+
+#heartScene .content {
+    max-width: 700px;
+    margin: 0 auto;
+    padding-bottom: 180px;
+}
+
+#heartScene .letter {
+    max-height: none !important;
+    margin-bottom: 40px;
+}
+
+#letterContainer {
+    margin-bottom: 40px;
+}
+
+#letterText {
+    max-height: none !important;
+}
+
+#finalMessage {
+    padding-bottom: 120px;
+    margin-bottom: 80px;
+}
+
+#heartNext {
+    margin-bottom: 100px;
+}
